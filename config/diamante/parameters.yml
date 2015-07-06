@@ -1,0 +1,20 @@
+parameters:
+    database_driver: pdo_mysql
+    database_host: db
+    database_port: null
+    database_name: diamantedesk
+    database_user: diamantedesk
+    database_password: '123123'
+    database_drop_full: true
+    mailer_transport: mail
+    mailer_host: null
+    mailer_port: null
+    mailer_encryption: null
+    mailer_user: null
+    mailer_password: null
+    websocket_host: 127.0.0.1
+    websocket_port: 8080
+    session_handler: session.handler.native_file
+    locale: en
+    secret: ad77b831dff160b7f1aef954575e59b7
+    installed: null
