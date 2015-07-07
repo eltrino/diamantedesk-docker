@@ -40,3 +40,6 @@ docker run
 Set {DB alias} to any value you want and use it as DB hostname during installation
 
 
+# Notes
+Application in this image is not installed, so you have to proceed with web installer instructions.
+Ability to install application automatically coming soon.
