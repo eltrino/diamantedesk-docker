@@ -10,7 +10,9 @@ To learn more information about Docker, click [here](https://docs.docker.com).
 
 The database is not included in the image, so you need to link another container with database installed.
 
-Optionally, you can use ```make``` file to build an image and run/stop containers.
+Optionally, you can use ```make``` or ```docker-compose``` to build an image and run/stop containers.
+
+## Run DiamanteDesk Application Using docker-compose
 
 ## Run DiamanteDesk Application Using Makefile
 1. Download [Makefile](https://raw.githubusercontent.com/eltrino/diamantedesk-docker/master/Makefile) to the folder of your choise.

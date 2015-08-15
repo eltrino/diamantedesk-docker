@@ -1,0 +1,19 @@
+web:
+#  image: eltrino/diamante_desk
+  build: .
+  ports:
+    - "80:80"
+  volumes:
+    - diamante:/var/www/diamante
+  links:
+    - db
+  command: 'apache2-foreground'
+db:
+  image: mysql:5.6
+  # volumes:
+    # - /Users/krasilich/projects/mysql/:/var/lib/mysql
+  environment:
+    MYSQL_ROOT_PASSWORD: '123123'
+    MYSQL_USER: diamantedesk
+    MYSQL_PASSWORD: '123123'
+    MYSQL_DATABASE: diamantedesk
