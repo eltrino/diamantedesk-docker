@@ -1,0 +1,16 @@
+version: "3"
+services:
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 123123
+      MYSQL_DATABASE: diamantedesk
+      MYSQL_USER: diamantedesk
+      MYSQL_PASSWORD: 123123
+  web:
+    image: eltrino/diamantedesk
+    build: .
+    ports:
+      - 8015:80
+      - 8016:8080

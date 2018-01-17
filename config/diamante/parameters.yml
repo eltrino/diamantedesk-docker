@@ -5,16 +5,23 @@ parameters:
     database_name: diamantedesk
     database_user: diamantedesk
     database_password: '123123'
-    database_drop_full: true
     mailer_transport: mail
     mailer_host: null
     mailer_port: null
     mailer_encryption: null
     mailer_user: null
     mailer_password: null
-    websocket_host: 127.0.0.1
-    websocket_port: 8080
     session_handler: session.handler.native_file
     locale: en
     secret: ad77b831dff160b7f1aef954575e59b7
     installed: null
+    websocket_bind_address: 0.0.0.0
+    websocket_bind_port: 8080
+    websocket_frontend_host: '*'
+    websocket_frontend_port: 8080
+    websocket_backend_host: '*'
+    websocket_backend_port: 8080
+    assets_version: null
+    assets_version_strategy: time_hash
+    message_queue_transport: dbal
+    message_queue_transport_config: null
